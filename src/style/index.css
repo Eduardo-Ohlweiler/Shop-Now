@@ -1,0 +1,242 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-primary);
+    width: 100%;
+    height: 55px;
+    
+}
+
+header h1{
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul li {
+    background-color: rgba(18, 184, 134, 0.05);
+    border: 1.5px;
+    color: rgba(18, 184, 134, 1);
+    padding: 14px 26px 14px 26px;
+    height: 52px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.menu ul li:hover {
+    color: #fff;
+    background-color: rgba(18, 184, 134, 1);
+    cursor: pointer;
+}
+
+.pesquisar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisar input {
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    background-color:  rgba(18, 184, 134, 0.05);
+    padding-left: 15px;
+    border: none;
+}
+
+.pesquisar button {
+    width: 50%;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #12B886;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.pesquisar button:hover {
+    color: #12B886;
+    background-color: #d1d1d1;
+}
+
+.valor-lista {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+    margin: 60px 0;
+    box-shadow: var(--shadow-primary);
+}
+
+.atençao-item{
+    color: #12B886;
+}
+
+.valor-lista h2 {
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.valor-lista button {
+    background-color: #212529;
+    width: 82px;
+    height: 34px;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.valor-lista button:hover {
+    color: #212529;
+    background-color: #d1d1d1;
+    font-weight: bold;
+    border: none;
+}
+
+.content ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content button {
+    width: 274px;
+    height: 282px;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content button:hover {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content button img {
+    width: 274px;
+    height: 175px;
+    border-radius: 8px;
+}
+
+.content button img:hover {
+    text-transform: uppercase;
+    overflow: hidden;
+    scale: 1.1;
+}
+
+.content button small {
+    color: #868E96;
+}
+
+
+@media (min-width: 768px) {
+
+    .menu {
+        display: flex;
+        width: 100%;
+    }
+
+    .pesquisar {
+        display: none;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .pesquisar {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .main {
+        padding: 20px 100px;
+    }
+
+    .cabeçalho {
+        margin: 0 40px;
+        margin-top: 20px;
+    }
+
+    .valor-lista {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .pesquisar button {
+        margin-top: 0;
+        width: 52px;
+        height: 52px;
+    }
+
+    .pesquisar input {
+        width: 200px;
+        height: 52px;
+    }
+
+    .content ul {
+        margin: 0 35px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .pesquisar input {
+        width: 392px;
+    }
+
+    .cabeçalho {
+        margin: 0 90px;
+        margin-top: 20px;
+    }
+
+    .valor-lista {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
